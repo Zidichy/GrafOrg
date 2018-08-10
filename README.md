@@ -13,12 +13,12 @@ As this theme will change the base theme, you can get around that by using [subf
 
 Create **another** reverse proxy for monitorr and add this:
 ```nginx
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/graforg/master/graforg.css">
-		</head>';
-		sub_filter_once on;
+proxy_set_header Accept-Encoding "";
+sub_filter
+'</head>'
+'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/graforg/master/graforg.css">
+</head>';
+sub_filter_once on;
 ```
 ### Here is a complete example:
 ```nginx
