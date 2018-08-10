@@ -16,7 +16,7 @@ Create **another** reverse proxy for monitorr and add this:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/graforg/master/graforg.css">
+'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/GrafOrg/master/graforg.css">
 </head>';
 sub_filter_once on;
 ```
@@ -42,7 +42,7 @@ location / {
   proxy_set_header Accept-Encoding "";
   sub_filter
   '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/graforg/master/graforg.css">
+  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/GrafOrg/master/graforg.css">
   </head>';
   sub_filter_once on;
   proxy_hide_header X-Frame-Options;
