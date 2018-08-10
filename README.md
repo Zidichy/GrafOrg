@@ -9,7 +9,7 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 **NOTE:** When viewing Grafana in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. 
 
 ### Subfilter
-As this theme will change the base theme, you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+As Grafana doesn't have support for custom CSS theme you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
 
 Create **another** reverse proxy for monitorr and add this:
 ```nginx
