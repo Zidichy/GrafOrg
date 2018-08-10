@@ -56,6 +56,96 @@ location / {
   }
 }
 ```
+### Custom HTML for Organizr Homepage
+Thanks [Fma965](https://gist.github.com/Fma965) for the code
+```css
+<style>
+.flex {
+  	display: flex;
+  	flex-wrap: wrap;
+ 	align-items: center;
+  	justify-content: center;
+	background: transparent;
+	margin-top:10px;
+	box-shadow: none !important;
+}
+.flex-child {
+	flex: 1 1 1 1;
+	padding: 1px 1px 1px 1px;
+}
+#flex-grafanadwidget1 {
+	min-width: 25%;
+}
+#flex-grafanadwidget2 {
+	min-width: 25%;
+}
+#flex-grafanadwidget3 {
+	min-width: 25%;
+}
+#flex-grafanadwidget4 {
+	min-width: 25%;
+}
+
+@media only screen and (max-width: 400px) {
+    .flex-child>h5 {
+	margin-left: 15px;
+    }
+#announcementRow {
+	background-color:transparent !important;
+}
+.flex-child>h5 {
+	text-transform: uppercase;
+	font-weight: 600 !important;
+	font-size: 15px;important;
+	color: #eee;
+}
+.overflowhider {
+	height: 100%;
+	overflow: hidden;
+}
+#grafanadwidget1 {
+	position: relative;
+	height: calc(250px);
+	width: calc(100%);
+}
+#grafanadwidget2 {
+    position: relative;
+	height:calc(250px);
+	width:calc(100%);
+}
+#grafanadwidget3 {
+	position: relative;
+	height: calc(250px);
+	width: calc(100%);
+}
+#grafanadwidget4 {
+    position: relative;
+	height:calc(250px);
+	width:calc(100%);
+}
+</style>
+
+<div id="announcementRow" class="row">
+	<div class="content-box flex">
+<div class="flex-child" id="flex-grafanadwidget1">
+  <h5><span>Panel name</span></h5>
+  <div class="overflowhider"><embed id="grafanadwidget1" src='https://graforg.domain.com/panel-embed-link'/></div>
+  </div>
+<div class="flex-child box-shadow" id="flex-grafanadwidget2">
+  <h5><span>Panel name</span></h5>
+  <div class="overflowhider"><embed id="grafanadwidget2" src='https://graforg.domain.com/panel-embed-link' /></div>
+  </div>
+<div class="flex-child" id="flex-grafanadwidget3">
+  <h5><span>Panel name</span></h5>
+  <div class="overflowhider"><embed id="grafanadwidget3" src='https://graforg.domain.com/panel-embed-link'/></div>
+  </div>
+<div class="flex-child box-shadow" id="flex-grafanadwidget4">
+  <h5><span>Panel name</span></h5>
+  <div class="overflowhider"><embed id="grafanadwidget4" src='https://graforg.domain.com/panel-embed-link' /></div>
+  </div>	
+	</div>
+</div>
+```
 
 ![](/Screenshots/1.jpg)
 
