@@ -26,10 +26,10 @@ body {
 /* Dashboard search menu */
 .search-field-wrapper {
     background-color: #ffffff00 !important;
-    background-image: url(https://cdn.rawgit.com/leram84/layer.Cake/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/leram84/layer.Cake/master/Resources/blur-light.png) !important;
+    background-image: url(https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-light.png) !important;
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
-	box-shadow: none !important;
+    box-shadow: none !important;
 }
 .search-field-wrapper>input {
 	height: 55px !important;
